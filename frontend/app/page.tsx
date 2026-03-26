@@ -1,17 +1,19 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Dashboard from "./pages/Dashboard";
-import PrintPreview from "./pages/PrintPreview";
+import UnifiedInput from "./components/UnifiedInput";
+import Link from "next/link";
 
-const App: React.FC = () => {
+export default function Dashboard() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/print" element={<PrintPreview />} />
-      </Routes>
-    </BrowserRouter>
+    <main className="min-h-screen bg-gray-50 p-8">
+      <div className="max-w-4xl mx-auto flex justify-between items-center mb-8">
+        <h1 className="text-3xl font-extrabold text-gray-800">Clinic Notes & Billing</h1>
+        <Link 
+          href="/print" 
+          className="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700"
+        >
+          Go to Print Preview
+        </Link>
+      </div>
+      <UnifiedInput />
+    </main>
   );
 }
-
-export default App;
