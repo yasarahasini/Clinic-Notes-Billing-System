@@ -1,10 +1,9 @@
-"use client"; 
-
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import PrintPreview from "./pages/PrintPreview";
 
-export default function App() {
+const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>
@@ -14,3 +13,5 @@ export default function App() {
     </BrowserRouter>
   );
 }
+
+export default App;
