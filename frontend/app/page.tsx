@@ -8,7 +8,7 @@ export default function Dashboard() {
         <h1 className="text-3xl font-extrabold text-gray-800">Clinic Notes & Billing</h1>
         <Link 
           href="/print" 
-          className="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700"
+          className="bg-blue-800 text-white px-4 py-2 rounded hover:bg-gray-700"
         >
           Go to Print Preview
         </Link>

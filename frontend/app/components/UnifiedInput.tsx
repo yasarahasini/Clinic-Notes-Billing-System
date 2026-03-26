@@ -22,7 +22,7 @@ export default function UnifiedInput() {
   return (
     <div className="p-4 max-w-2xl mx-auto border rounded-lg shadow-sm bg-white">
       <textarea
-        className="w-full h-40 p-2 border rounded focus:ring-2 focus:ring-blue-500 outline-none"
+        className="w-full h-40 p-2 border text-gray-900 rounded focus:ring-2 focus:ring-blue-500 outline-none"
         placeholder="Enter or speak notes, drugs, and tests..."
         value={text}
         onChange={(e) => setText(e.target.value)}
