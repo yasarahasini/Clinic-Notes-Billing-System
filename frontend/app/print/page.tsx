@@ -13,11 +13,11 @@ export default function PrintPreview() {
   };
 
   return (
-    <div className="p-8 max-w-2xl mx-auto">
+    <div className="p-8 max-w-2xl mx-auto bg-white py-20">
       <Link href="/" className="text-blue-500 hover:underline mb-4 inline-block">
         ← Back to Dashboard
       </Link>
-      <h1 className="text-2xl font-bold mb-6">Print Preview</h1>
+      <h1 className="text-2xl font-bold mb-6 text-black">Print Preview</h1>
       <div className="border-2 border-dashed border-gray-300 p-10 text-center rounded-lg">
         <p className="text-gray-500">PDF Preview Content Goes Here</p>
         <button 
